@@ -1,76 +1,42 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
 
-function Home() {
-  return (
-    <div className="page">
-      <h1>Home</h1>
-      <p>Welcome to the Home Page.</p>
-    </div>
-  );
-}
-
-function Aboutus() {
-  return (
-    <div className="page">
-      <h1>About Us</h1>
-      <p>This page provides information about us.</p>
-    </div>
-  );
-}
-
-function Contactus() {
-  return (
-    <div className="page">
-      <h1>Contact Us</h1>
-      <p>You can contact us through this page.</p>
-    </div>
-  );
-}
+// TODO: Import the required components from react-router-dom
+// TODO: include the Home component
+// TODO: include the About Us component
+// TODO: include the Contact Us component
 
 function App() {
+
   return (
-    <BrowserRouter>
-      <div className="app">
+    <div>
 
-        <header>
-          <h1>My React Website</h1>
+      <header>
+        <h1>My React Website</h1>
 
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/aboutus">About Us</Link>
-            <Link to="/contactus">Contact Us</Link>
-          </nav>
-        </header>
+        <nav>
+          {/* TODO:
+              Create navigation links for:
+              1. Home
+              2. About Us
+              3. Contact Us
+          */}
+        </nav>
+      </header>
 
-        <main>
-          <Routes>
 
-            <Route
-              path="/"
-              element={<Home />}
-            />
+      <main>
 
-            <Route
-              path="/aboutus"
-              element={<Aboutus />}
-            />
+        {/* TODO:
+            1. Add BrowserRouter
+            2. Add Routes
+            3. Create Route for Home
+            4. Create Route for About Us
+            5. Create Route for Contact Us
+        */}
 
-            <Route
-              path="/contactus"
-              element={<Contactus />}
-            />
+      </main>
 
-          </Routes>
-        </main>
-
-      </div>
-    </BrowserRouter>
+    </div>
   );
 }
 
